@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Approval Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Loan Approval Prediction</h2>
+        <form id="loan-form">
+            <label for="cibil_score">CIBIL Score:</label>
+            <input type="number" id="cibil_score" required>
+
+            <label for="loan_term">Loan Term (Years):</label>
+            <input type="number" id="loan_term" required>
+
+            <label for="loan_amount">Loan Amount:</label>
+            <input type="number" id="loan_amount" required>
+
+            <label for="income_annum">Annual Income:</label>
+            <input type="number" id="income_annum" required>
+
+            <button type="submit">Check Approval</button>
+        </form>
+        
+    </div>
+    <div id="result" style = "display: none;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
